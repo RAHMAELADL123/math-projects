@@ -1,0 +1,21 @@
+﻿// See https://aka.ms/new-console-template for more information
+int y, z, sum = 0;
+int number1 = int.Parse(Console.ReadLine());
+int number2 = int.Parse(Console.ReadLine());
+for (y = number1; y <= number2; y++)
+{
+    for (z = 1; z <= y / 2; z++)
+    {
+        if (y % z == 0)
+        {
+            sum = sum + z;
+        }
+    }
+    if (sum == y)
+    {
+        Console.WriteLine(y + "is perfect ");
+    }
+    sum = 0;
+}
+
+

@@ -1,0 +1,25 @@
+﻿// See https://aka.ms/new-console-template for more information
+int x, y;
+bool z = true;
+Console.WriteLine("prime");
+for (x = 2; x <= 300; x++)
+{
+    for (y = 2; y <= 300; y++)
+    {
+        if (x % y == 0 && x != y)
+        {
+            z = false;
+            break;
+        }
+
+    }
+    if (z)
+    {
+        Console.WriteLine(x + "is prime");
+    }
+    z = true;
+
+}
+
+
+
